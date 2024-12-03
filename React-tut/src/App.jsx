@@ -1,16 +1,14 @@
-import { Header } from "./components/ReactApp/Header";
-import { Main } from "./components/ReactApp/Page";
-import { Footer } from "./components/ReactApp/Footer";
+
+import { TravelHeader } from "./components/TravelPage/TravelHeader";
 
 
 
 function App() {
 
   return (
-    <div className="bg-slate-600" width="full">
-     <Header/>
-      <Main/>
-      <Footer/>
+    <div>
+     <TravelHeader/>
+      
     </div>
   );
 }
