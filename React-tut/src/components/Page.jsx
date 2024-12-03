@@ -1,7 +1,7 @@
 export const Main = () => {
   return (
     <div>
-      <main>
+      <main className="min-h-screen flex flex-col">
         <h1>Reasons I am excited to learn about react </h1>
         <ol>
           <li>React is a popular library</li>
