@@ -1,6 +1,6 @@
-import { Header } from "./components/Header";
-import { Main } from "./components/Page";
-import { Footer } from "./components/Footer";
+import { Header } from "./components/ReactApp/Header";
+import { Main } from "./components/ReactApp/Page";
+import { Footer } from "./components/ReactApp/Footer";
 
 
 
