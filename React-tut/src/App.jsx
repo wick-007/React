@@ -1,7 +1,15 @@
+import { Jokes } from "./components/Jokes/Jokes";
 import Contact from "./components/TravelPage/Contact";
 import { TravelHeader } from "./components/TravelPage/TravelHeader";
+import jokesdata from "../jokesdata";
 
 function App() {
+  const jokeElements = jokesdata.map((joke,index)=>{
+    return  <Jokes
+              key={index}
+             {...joke}
+              />
+  })
   return (
     <div>
       <TravelHeader />
@@ -31,7 +39,13 @@ function App() {
           mail="Sanch@mail.com"
         />
       </div>
-      <hr/>
+      <hr />
+      <div>
+        <div><h1 className="text-3xl flex justify-center">Jokes</h1></div>
+        <div className="flex">
+          {jokeElements}
+        </div>
+      </div>
     </div>
   );
 }
