@@ -1,18 +1,30 @@
-import { Jokes } from "./components/Jokes/Jokes";
+/* import { Jokes } from "./components/Jokes/Jokes"; 
 import Contact from "./components/TravelPage/Contact";
 import { TravelHeader } from "./components/TravelPage/TravelHeader";
 import jokesdata from "../jokesdata";
+*/
+
+
+
+
 
 function App() {
-  const jokeElements = jokesdata.map((joke,index)=>{
-    return  <Jokes
-              key={index}
-             {...joke}
-              />
-  })
+  
   return (
     <div>
-      <TravelHeader />
+    </div> 
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+{/*  <TravelHeader />
       <div className="flex">
         <Contact
           img="../public/dog1.jpg"
@@ -46,8 +58,4 @@ function App() {
           {jokeElements}
         </div>
       </div>
-    </div>
-  );
-}
-
-export default App;
+    </div> */}
