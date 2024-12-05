@@ -4,6 +4,9 @@ import { TravelHeader } from "./components/TravelPage/TravelHeader";
 import jokesdata from "../jokesdata";
 */
 
+import Header from "./components/Chef-Claude/header";
+import Main from "./components/Chef-Claude/Main";
+
 
 
 
@@ -12,6 +15,8 @@ function App() {
   
   return (
     <div>
+      <Header/>
+      <Main/>
     </div> 
   );
 }
