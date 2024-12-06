@@ -17,7 +17,7 @@ export default function SoundPad(){
 
     return(
         <div>
-          <h1 className="text-2xl"> Sound Pads</h1>
+          <h1 className="text-2xl m-1"> Sound Pads</h1>
           <div>{Pad}</div>
         </div>
     )
