@@ -1,22 +1,39 @@
 /* import { Jokes } from "./components/Jokes/Jokes"; 
 import Contact from "./components/TravelPage/Contact";
 import { TravelHeader } from "./components/TravelPage/TravelHeader";
-import jokesdata from "../jokesdata";
 */
+
+
+// import jokesdata from "../jokesdata";
+
 
 import Header from "./components/Chef-Claude/header";
 import Main from "./components/Chef-Claude/Main";
+import SoundPad from "./components/Chef-Claude/Soundpads";
+// import { Jokes } from "./components/Jokes/Jokes";
 
 
 
 
 
 function App() {
+
+  // const jokeElements = jokesdata.map((joke,index)=>{
+  //   return  <Jokes
+  //             key={index}
+  //            {...joke}
+  //             />
+  // })
   
   return (
     <div>
       <Header/>
       <Main/>
+      <hr/>
+      <SoundPad/>
+      {/* <div className="flex m-5">
+      {jokeElements}
+      </div> */}
     </div> 
   );
 }
