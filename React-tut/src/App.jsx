@@ -10,7 +10,7 @@ import { TravelHeader } from "./components/TravelPage/TravelHeader";
 import { useState } from "react";
 import Header from "./components/Chef-Claude/header";
 import Main from "./components/Chef-Claude/Main";
-import SoundPad from "./components/Chef-Claude/Soundpads";
+// import SoundPad from "./components/Chef-Claude/Soundpads";
 // import { Jokes } from "./components/Jokes/Jokes";
 
 
@@ -19,7 +19,7 @@ import SoundPad from "./components/Chef-Claude/Soundpads";
 
 function App(props) {
    
- // eslint-disable-next-line react/prop-types
+  
  let [darkmode,setDarkmode]=useState(props.darkmode)
 
  const background = darkmode ? "#EE82EE":"#FFA500";
@@ -40,7 +40,7 @@ function App(props) {
       <Header darkClick={darkClick}/>
       <Main/>
       <hr/>
-      <SoundPad/>
+      {/* <SoundPad/> */}
       {/* <div className="flex m-5">
       {jokeElements}
       </div> */}

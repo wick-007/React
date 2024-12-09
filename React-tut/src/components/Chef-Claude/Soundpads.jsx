@@ -6,6 +6,7 @@ import Pad from "./Pad"
 
 
 export default function SoundPad(){
+    // eslint-disable-next-line no-unused-vars
     let [pads,setPads] = useState(soundpad)
    
 
