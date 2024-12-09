@@ -7,9 +7,11 @@ import { TravelHeader } from "./components/TravelPage/TravelHeader";
 // import jokesdata from "../jokesdata";
 
 
-import { useState } from "react";
-import Header from "./components/Chef-Claude/header";
-import Main from "./components/Chef-Claude/Main";
+// import { useState } from "react";
+// import Header from "./components/Chef-Claude/header";
+// import Main from "./components/Chef-Claude/Main";
+import Main2 from "./components/Meme-Generator/Main";
+import Header1 from "./components/Meme-Generator/Header";
 // import SoundPad from "./components/Chef-Claude/Soundpads";
 // import { Jokes } from "./components/Jokes/Jokes";
 
@@ -17,16 +19,16 @@ import Main from "./components/Chef-Claude/Main";
 
 
 
-function App(props) {
+function App() {
    
   
- let [darkmode,setDarkmode]=useState(props.darkmode)
+//  let [darkmode,setDarkmode]=useState(props.darkmode)
 
- const background = darkmode ? "#EE82EE":"#FFA500";
+//  const background = darkmode ? "#EE82EE":"#FFA500";
 
- const darkClick=()=>{
-  setDarkmode((prevdarkmode)=>!prevdarkmode)
-}
+//  const darkClick=()=>{
+//   setDarkmode((prevdarkmode)=>!prevdarkmode)
+// }
   
   // const jokeElements = jokesdata.map((joke,index)=>{
   //   return  <Jokes
@@ -36,9 +38,9 @@ function App(props) {
   // })
   
   return (
-    <div style={{background}}>
-      <Header darkClick={darkClick}/>
-      <Main/>
+    <div className="max-w-100 p-9">
+      <Header1/>
+      <Main2/>
       <hr/>
       {/* <SoundPad/> */}
       {/* <div className="flex m-5">
