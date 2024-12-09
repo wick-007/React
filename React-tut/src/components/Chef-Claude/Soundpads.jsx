@@ -1,13 +1,18 @@
 import { useState } from "react"
 import soundpad from "../../../soundpad"
+import Pad from "./Pad"
+
 
 
 
 export default function SoundPad(){
     let [pads,setPads] = useState(soundpad)
+   
 
-    const Pad = pads.map((pad)=>{
-        return   <button key={pad.id} className="border-2 solid border-purple-500 w-36 p-2 m-1">{pad.color}</button> 
+
+    
+    const Padd = pads.map((pad)=>{
+        return <Pad key={pad.id} color={pad.color} on={pad.on}/>
     })
    
     console.log(soundpad)
@@ -18,7 +23,7 @@ export default function SoundPad(){
     return(
         <div>
           <h1 className="text-2xl m-1"> Sound Pads</h1>
-          <div>{Pad}</div>
+          <div>{Padd}</div>
         </div>
     )
 }

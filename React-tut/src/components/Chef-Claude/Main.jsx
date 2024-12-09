@@ -5,8 +5,8 @@ export default function Main() {
   //   let [IsImportant, setIsImportant] = useState("Add Ingredient");
   const [recipeShown,setrecipeShown] = useState(false)
   const [ingredients, setingredients] = useState(["yam","eggs","tomato","fish"]);
-  const newIngredients = ingredients.map((ingredient) => {
-    return <li key={ingredient}> {ingredient}</li>;
+  const newIngredients = ingredients.map((ingredient,index) => {
+    return <li key={index}> {ingredient}</li>;
   });
 
   // const handleClickk = ()=>{

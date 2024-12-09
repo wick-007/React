@@ -2,7 +2,7 @@ export default[
     {
         id: 1,
         color:"#FF0000",
-        on:true
+        on:false
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export default[
     {
         id: 4,
         color:"#008000",
-        on:true
+        on:false
     },
     {
         id: 5,
@@ -27,6 +27,6 @@ export default[
     {
         id: 6,
         color:"#EE82EE",
-        on:true
+        on:false
     }
 ]
