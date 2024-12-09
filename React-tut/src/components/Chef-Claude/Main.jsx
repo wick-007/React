@@ -1,12 +1,13 @@
 import { useState } from "react";
 import Recipe from "./ChefClaude-Recipe";
 import IngredientList from "./Ingredients-List";
+import { getRecipeFromMistral } from "../../../ai";
 
 
 export default function Main() {
   // let [isGoingOut,setisGoingOut] = useState(true);
   //   let [IsImportant, setIsImportant] = useState("Add Ingredient");
-  const [recipeShown,setrecipeShown] = useState(true)
+  const [recipe,setRecipe] = useState("")
   const [ingredients, setingredients] = useState([]);
   const newIngredients = ingredients.map((ingredient,index) => {
     return <li key={index}> {ingredient}</li>;
@@ -15,9 +16,11 @@ export default function Main() {
   // const handleClickk = ()=>{
   //     return setisGoingOut((previsGoingOut) => !previsGoingOut);
   // }
+  
 
-  const recipeClick=()=>{
-    setrecipeShown((prevrecipeShown) => !prevrecipeShown)
+ const getRecipe = async ()=>{
+   const recipeMarkdown = await getRecipeFromMistral(ingredients)
+   setRecipe(recipeMarkdown)
   }
 
   const handleSubmit = (event) => {
@@ -50,8 +53,8 @@ export default function Main() {
           Add Ingredient
         </button>
       </form>
-        <IngredientList ingredients={ingredients} newIngredients={newIngredients} click={recipeClick}/>
-        {recipeShown ? null : <Recipe/>}
+        <IngredientList ingredients={ingredients} newIngredients={newIngredients} click={getRecipe}/>
+        {recipe ? <Recipe recipe={recipe}/>: <p>waiting for a recipe...</p>}
     </div>
   );
 }
